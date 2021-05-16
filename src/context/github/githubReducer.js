@@ -1,11 +1,9 @@
 import {
 	SEARCH_USERS,
 	SET_LOADING,
-	SET_ALERT,
 	CLEAR_USERS,
 	GET_USER,
 	GET_REPOS,
-	REMOVE_ALERT,
 } from '../types.js';
 
 export default (state, action) => {

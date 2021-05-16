@@ -5,11 +5,9 @@ import GithubReducer from './githubReducer';
 import {
 	SEARCH_USERS,
 	SET_LOADING,
-	SET_ALERT,
 	CLEAR_USERS,
 	GET_USER,
 	GET_REPOS,
-	REMOVE_ALERT,
 } from '../types.js';
 
 const GithubState = (props) => {
@@ -18,7 +16,6 @@ const GithubState = (props) => {
 		user: {},
 		repos: [],
 		loading: false,
-		alert: null,
 	};
 
 	const [state, dispatch] = useReducer(GithubReducer, initialState);
